@@ -1,0 +1,48 @@
+<!-- CSS configuration for the document -->
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .main {
+        flex: 1 0 auto;
+        min-height: 594px;
+    }
+    h1 {
+        color: #273b87;
+        text-align: center;
+    }
+    p {
+        background-color: #efece9;
+        border-radius: 4px;
+        padding-left: 8px;
+    }
+    .card {
+        border-radius: 12px;
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+    }
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .card-header:first-child {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom: 1px solid floralwhite;
+    }
+    .card-body {
+        min-height: 160px;
+    }
+    .card-footer {
+        padding-bottom: 0px;
+    }
+    footer {
+        flex-shrink: none;
+        text-align: center;
+    }
+</style>
