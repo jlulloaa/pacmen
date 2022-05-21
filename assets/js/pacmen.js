@@ -4,6 +4,10 @@ const pacArray = [
   ['assets/img/PacMan1.png', 'assets/img/PacMan2.png'],
   ['assets/img/PacMan3.png', 'assets/img/PacMan4.png'],
 ];
+const backgroundImgs = [
+  'assets/img/bckgrnd001.jpeg', 'assets/img/bckgrnd002.jpeg', 
+  'assets/img/bckgrnd003.jpeg', 'assets/img/bckgrnd004.jpeg'
+];
 
 var pacMen = []; // This array holds all the pacmen
 // These variables control the execution of the actions
@@ -27,6 +31,21 @@ reset_button.disabled=true;
 var area = document.getElementById('game');
 var wgame = area.clientWidth;
 var hgame = area.clientHeight;
+
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+canvas.width = wgame;
+canvas.height = hgame;
+var background = new Image();
+
+let bckgrndIndex = Math.floor(Math.random() * backgroundImgs.length); 
+background.src = backgroundImgs[bckgrndIndex];
+
+// Make sure the image is loaded first otherwise nothing will draw.
+background.onload = function(){
+    ctx.drawImage(background,0,0, wgame, hgame);   
+}
 
 // Just output the game area to console (debugging purposes):
 console.log('Area size (WxH): (' + wgame + ',' + hgame+ ')');
