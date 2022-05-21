@@ -1,32 +1,48 @@
-let pos = 0;
+// Some useful constants:
+const magn_velocity = 10;
 const pacArray = [
-  ['./images/PacMan1.png', './images/PacMan2.png'],
-  ['./images/PacMan3.png', './images/PacMan4.png'],
+  ['assets/img/PacMan1.png', 'assets/img/PacMan2.png'],
+  ['assets/img/PacMan3.png', 'assets/img/PacMan4.png'],
 ];
 
 var pacMen = []; // This array holds all the pacmen
-// This variable controls the execution of the actions
+// These variables control the execution of the actions
 var timer = null;
-// Control the buttons
-// At the start of the game, only create pacman is enable:
+var main_delay = 40;
+var delay = 1 * main_delay;
+
+// Buttons to control the action:
 var create_button = document.getElementById("create"); 
 var start_button = document.getElementById("start");
 var stop_button = document.getElementById("stop");
 var reset_button = document.getElementById("reset");
 
+// At the start of the game, only "create" pacman is enabled:
+create_button.disabled=false; // by default should be False, but there is no harm in ensuring it is so...
 start_button.disabled=true;
 stop_button.disabled=true;
 reset_button.disabled=true;
 
-// This variable helps determine which PacMan image should be displayed. It flips between values 0 and 1
-var focus = 0;
+// Define the area of the game, in terms of width and height. This sets up the boundaries where to move the pacmen
+var area = document.getElementById('game');
+var wgame = area.clientWidth;
+var hgame = area.clientHeight;
 
-// This variable makes the pacman squeeze a little when hit the borders
-shrink_size = 50;
-normal_size = 100;
+// Just output the game area to console (debugging purposes):
+console.log('Area size (WxH): (' + wgame + ',' + hgame+ ')');
 
-// Default size of the container holding the pacmen
-var area = {x: 100, y:100};
+// When choosing which element of pacArray will be used as the initial direction where the pacman will look at when created by makepacman(),
+// it should only pick an element from the first row (see pacArray):
+const pacman_row_pick = 0;
+
+// These variables define the pacman size and makes it squeeze a little when hitting the borders
+// Make it a fraction of the area game, so it becomes responsive as well
+normal_size = 0.05*wgame;
+shrink_size = 0.5*normal_size;
+
+// End of constants and variable declarations
+// §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+// Definition of auxiliar functions
 
 // This function returns an object with random values
 function setToRandom(scalex, scaley=0) {
@@ -44,45 +60,35 @@ function makePac() {
   // As soon as we create one pacman, the start game becomes active and have to ensure the reset holds inactive:
   start_button.disabled=false;
 
-  // Define the area id=game
-  let game = document.getElementById('game');
-  // Update the area size:
-  // area.x = parseInt(game.style.width, 10);
-  // area.y = parseInt(game.style.height, 10);
-  console.log('Area: ' + game.style.width);
-  // returns an object with random values scaled {x: 33, y: 21}
-  let velocity = setToRandom(10); // {x:?, y:?}
-  let position = setToRandom(area.x, area.y);
+  // returns an object with random values scaled 
+  let velocity = setToRandom(magn_velocity); 
+  let position = setToRandom(wgame-normal_size, hgame-normal_size);
     
   // Add image to div id = game
   let newimg = document.createElement('img');
   newimg.style.position = 'absolute';
 
-  // (JU) Defines the initial PacMan image as a random choice from the pacArray elements:
+  // Defines the initial PacMan image as a random choice from the pacArray elements:
   // get random index value
   let randomIndex = Math.floor(Math.random() * pacArray.length);
   // this variable defines what direction should PacMan go into:
   // 0 = left to right
   // 1 = right to left (reverse)
-  let directionX = 0;
-  // let directionY = 0;
-
-  newimg.src = pacArray[directionX][randomIndex];
+  newimg.src = pacArray[pacman_row_pick][randomIndex];
   newimg.width = normal_size;
 
-  // TODO: set position here
-  newimg.style.top = position.y;
-  newimg.style.left = position.x;
-  console.log('Pacman position (x,y): ('+position.x + ',' + position.y + ')')
+  // TODO: set the initial position here. This part is critical, as currently is not working as it should be. 
+  // It places all the new pacmen at the same position
+  newimg.style.top = position.y + 'px';
+  newimg.style.left = position.x + 'px';
+  console.log('Pacman position (x,y): ('+newimg.style.top + ',' + newimg.style.left + ')')
+
   // Modifies the colour of the pacman randomly:
-  // newimg.style.webkit.filter = 'hue-rotate(180deg)';
   let hueRotLevel = Math.random() * 360;
   newimg.style.filter = 'hue-rotate('+hueRotLevel + 'deg)';
-
- // newimg.style.backgroundColor = 'red';
-
+ 
   // TODO add new Child image to game
-  game.appendChild(newimg);
+  area.appendChild(newimg);
 
   // return details in an object
   return {
@@ -90,11 +96,12 @@ function makePac() {
     velocity,
     newimg,
     randomIndex,
-    directionX
+    pacman_row_pick
   };
 }
 
 function update() {
+
   // As soon as we press start, the start button becomes disabled, and the stop becomes active:
   start_button.disabled=true;
   stop_button.disabled=false;
@@ -109,25 +116,26 @@ function update() {
     item.position.x += item.velocity.x;
     item.position.y += item.velocity.y;
 
-    item.newimg.style.left = item.position.x;
-    item.newimg.style.top = item.position.y;
+    item.newimg.style.left = item.position.x + 'px';
+    item.newimg.style.top = item.position.y + 'px';
 
-    item.newimg.src = pacArray[item.directionX][item.randomIndex]    
+    item.newimg.src = pacArray[item.pacman_row_pick][item.randomIndex]    
   });
-  timer = setTimeout(update, 20);
+  timer = setTimeout(update, delay);
+
 }
 
 function checkCollisions(item) {
   // TODO: detect collision with all walls and make pacman bounce
-  if (item.position.x + item.velocity.x + item.newimg.width >= window.innerWidth || 
+  if (item.position.x + item.velocity.x + item.newimg.width >= wgame || 
       item.position.x + item.velocity.x < 0 ) {
         item.velocity.x = -item.velocity.x;
-        item.directionX = Number(!item.directionX);
+        item.pacman_row_pick = Number(!item.pacman_row_pick);
         item.newimg.width=shrink_size;        
         item.newimg.height=normal_size+0.5*shrink_size;
       }
 
-  if (item.position.y + item.velocity.y + item.newimg.height >= window.innerHeight || 
+  if (item.position.y + item.velocity.y + item.newimg.height >= hgame || 
       item.position.y + item.velocity.y < 0 ) {
         item.velocity.y = -item.velocity.y;
         item.newimg.height=shrink_size;        
@@ -157,3 +165,13 @@ function stop(item) {
 function makeOne() {
   pacMen.push(makePac()); // add a new PacMan
 }
+
+var slider = document.querySelector('#speedSlider') // getElementById("slidecontainer");
+slider.addEventListener('input', e => {
+  console.log('Preclick delay: '+delay);
+  stop();
+  delay = (1 - e.target.value/100) * main_delay;
+  console.log('Postclick delay: '+delay);
+  update();
+
+})
