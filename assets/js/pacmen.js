@@ -96,7 +96,6 @@ function makePac() {
   newimg.src = pacArray[pacman_row_pick][randomIndex];
   newimg.width = normal_size;
 
-  // TODO: set the initial position here. This part is critical, as currently is not working as it should be. 
   // It places all the new pacmen at the same position
   newimg.style.top = position.y + 'px';
   newimg.style.left = position.x + 'px';
@@ -106,7 +105,7 @@ function makePac() {
   let hueRotLevel = Math.random() * 360;
   newimg.style.filter = 'hue-rotate('+hueRotLevel + 'deg)';
  
-  // TODO add new Child image to game
+  // Add new Child image to game
   area.appendChild(newimg);
 
   // return details in an object
