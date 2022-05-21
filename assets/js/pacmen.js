@@ -1,4 +1,4 @@
-// Some useful constants:
+// Define initial constants:
 const magn_velocity = 10;
 const pacArray = [
   ['assets/img/PacMan1.png', 'assets/img/PacMan2.png'],
@@ -32,7 +32,6 @@ var area = document.getElementById('game');
 var wgame = area.clientWidth;
 var hgame = area.clientHeight;
 
-
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 canvas.width = wgame;
@@ -59,7 +58,7 @@ const pacman_row_pick = 0;
 normal_size = 0.05*wgame;
 shrink_size = 0.5*normal_size;
 
-// End of constants and variable declarations
+// End of initial constants and variables definitions
 // §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
 // Definition of auxiliar functions
 
@@ -74,9 +73,12 @@ function setToRandom(scalex, scaley=0) {
   };
 }
 
-// Factory to make a PacMan at a random position with random velocity
+// §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+// All functions associated with the PacMen Factory
+// When making a PacMan, it appears at a random position and will move at a random speed
 function makePac() {
-  // As soon as we create one pacman, the start game becomes active and have to ensure the reset holds inactive:
+  // As soon as we create one pacman, the "start game" button becomes active
+  // Also have to ensure the "reset game" holds inactive, independent of the previous state of the game:
   start_button.disabled=false;
 
   // returns an object with random values scaled 
@@ -88,16 +90,15 @@ function makePac() {
   newimg.style.position = 'absolute';
 
   // Defines the initial PacMan image as a random choice from the pacArray elements:
-  // get random index value
   let randomIndex = Math.floor(Math.random() * pacArray.length);
-  // this variable defines what direction should PacMan go into:
+  // randomIndex defines what direction should PacMan go into:
   // 0 = left to right
   // 1 = right to left (reverse)
   newimg.src = pacArray[pacman_row_pick][randomIndex];
   newimg.width = normal_size;
 
   // It places all the new pacmen at the same position
-  newimg.style.top = position.y + 'px';
+  newimg.style.top = position.y + 'px'; // style.top and style.left must have units (this took me a while to realise....)
   newimg.style.left = position.x + 'px';
   console.log('Pacman position (x,y): ('+newimg.style.top + ',' + newimg.style.left + ')')
 
@@ -144,7 +145,7 @@ function update() {
 }
 
 function checkCollisions(item) {
-  // TODO: detect collision with all walls and make pacman bounce
+  // Detect collision with all walls and make pacman bounce by stretching the picture in one dimension (the one hitting the wall)
   if (item.position.x + item.velocity.x + item.newimg.width >= wgame || 
       item.position.x + item.velocity.x < 0 ) {
         item.velocity.x = -item.velocity.x;
@@ -184,7 +185,7 @@ function makeOne() {
   pacMen.push(makePac()); // add a new PacMan
 }
 
-var slider = document.querySelector('#speedSlider') // getElementById("slidecontainer");
+var slider = document.querySelector('#speedSlider');
 slider.addEventListener('input', e => {
   console.log('Preclick delay: '+delay);
   stop();
