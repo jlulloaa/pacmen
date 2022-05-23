@@ -20,37 +20,43 @@
         <!-- I'm based on the Holy Grial layout (https://en.wikipedia.org/wiki/Holy_grail_(web_design)) -->
         <div class="container-fluid main"> <!-- Main block-->
             <div class="row"><!-- Header -->
-                <div class="col-sm-8">
-                    <div id="header">
-                        <h1>PacMen Factory</h1>
-                    </div>
+                <div class="col" id="header">  <!-- -sm-8"> -->
+                    <h1>PacMen Factory</h1>
                 </div>
             </div>
-            <div class="row"> <!-- Left sidebar-->
-                <div class="col-sm-1">
-                    <div id='buttons'>
-                        <p><button id="create" class="btn btn-primary" onclick='makeOne()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to create a new Pacman"> Add PacMan</button></p>
-                        <p><button id="start" class="btn btn-primary" onclick='update()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to activate motion"> Start Game</button></p>
-                        <p><button id="stop" class="btn btn-primary" onclick='stop()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to stop the show"> Stop Game</button></p>
-                        <p><button id="reset" class="btn btn-primary" onclick='reset()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to reset the game"> Reset Game</button></p>
-                    </div>
+            <div class="row"> <!-- Left sidebar -->
+                <div class="col-lg-2 btn-group-vertical" style="height: 50%;" id='buttons'> <!-- -sm-1"> -->
+                    <button id="create" class="btn btn-primary" onclick='makeOne()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to create a new Pacman"> Add PacMan</button>
+                    <button id="start" class="btn btn-primary" onclick='update()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to activate motion"> Start Game</button>
+                    <button id="stop" class="btn btn-primary" onclick='stop()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to stop the show"> Stop Game</button>
+                    <button id="reset" class="btn btn-primary" onclick='reset()' data-bs-toggle="tooltip" data-bs-placement="right" title="Click to reset the game"> Reset Game</button>
                 </div>
-                <div class="col-sm-6 "> 
+                <div class="col-lg-10"> 
                     <div class="card" id="game"> <!-- middle (main) column -->
                         <canvas id="canvas"></canvas>
                     </div>
                 </div>
-                <div class="col-sm-1 "><!-- Right sidebar -->
-                    <label for="speedSlider">Slide to control the speed </label><br>
-                    <input type="range" min="1" max="100" value="1" class="slider" id="speedSlider">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="table-info text-capitalize align-text-top" for="speedSlider"><h5>Slide to control the speed &rarr; </h5></label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="range" class="form-range btn-outline-dark" min="1" max="100" step="5" value="1" id="speedSlider">
                 </div>
             </div>
+        </div>
 
-            <div class="col-sm-8 ">
-                <footer>
-                    MIT licence
-                </footer>
-            </div>
+            <footer>
+                <div class="col">
+                    <a href="https://github.com/jlulloaa/pacmen/blob/main/LICENSE" target="_blank"> <!-- </a>class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:license&quot;}"> -->
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-law mr-2">
+                            <path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path>
+                        </svg> MIT license |
+                    </a>
+                    <a href="https://www.kindpng.com/imgv/ooJoxJ_baby-pacman-arcade-machine-hd-png-download/" target="_blank"> Wallpaper</a>
+                </div>
+            </footer>
         </div>
 
         <!-- Here the magic happens -->
