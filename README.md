@@ -45,12 +45,15 @@ The buttons to the left and the slider at the bottom, allow controlling the acti
 I have formatted the page mainly with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). I also performed some minor and more specific adjustements through my own css style file. 
 
 # How to Run
+<img alt="Button Screenshot" src="howto/buttons.png" height=250px> 
 The set of buttons to the left of the scene allows to control the game:
+
 * **Add Pacman**: creates a new pacman and places it in a random position within the area. By [modifying the hue of the source images](https://developer.mozilla.org/en-US/docs/Web/CSS/filter), we give the impression of re-colouring (pseudo) randomly every new pacman.
 * **Start Game**: starts the motion of the pacmen. When created, every pacmen is assigned a random speed and placed at a random position, so when they start "moving", it appears they move with different velocities across the area. Motion is achieved by shifting the position of the images in a small amount and alternating between pacman images (i.e. mouth closed/open), between calls to the function [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout). 
 * **Stop Game**: pauses the action, leaving every pacmen static within the area, they can regain movement by just clicking **Start Game** again, or moving the speed slider (see below)
 * **Reset Game**: stops the action, cleans up the screen (i.e. removes all the pacmen) and changes the scene, by selecting another background image
 
+<img alt="Slider Screenshot" src="howto/slider.png" height=250px> 
 Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, by increasing all the speeds in the same relative amount (i.e. accelerates the whole scenery).
 
 ##  [<img alt="Pacmen Right" src="assets/img/PacMan1.png" height=32px> Play with this demo <img alt="Pacmen Right" src="assets/img/PacMan3.png" height=32px>](https://jlulloaa.github.io/pacmen)
