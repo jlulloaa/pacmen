@@ -23,9 +23,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot]<video width="320" height="240" autoplay controls>
-  <source src="howto/demo.mp4" type="video/mp4">
-</video>
+![screenshot]<video width="320" height="240" autoplay controls> <source src="howto/demo.mp4" type="video/mp4"></video>
 
 
 # Project Title (with a fancy format)
