@@ -33,7 +33,7 @@ PacMen Factory is an exploratory exercise I've done as part of the [full-stack w
 
 By using a set of pacman images in different states (see images below) and the use of the function [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout), we create the illusion of motion of the little creatures appearing on the screen, pretty much like the concept behind [movie creation](https://en.wikipedia.org/wiki/Film).
 
-<img alt="Pacmen 001" src="assets/img/PacMan1.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan2.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan3.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan4.png" height=32px>G
+<img alt="Pacmen 001" src="assets/img/PacMan1.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan2.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan3.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan4.png" height=32px>
 Set of pacman images used to create the illusion of motion. 
 
 <img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px><img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px> By alternating between the open and closed mouth pacman images at regular intervals, the pacman appears to be moving.
