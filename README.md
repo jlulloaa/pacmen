@@ -74,7 +74,7 @@ Pull requests are welcome, although I'm not sure will be reviewing them periodic
 
 # Credits
 This software uses the following third party tools:
-* The background image scenes are my own photos, which I've taken on different travel with my :camera: Nikon DSLR
+* The background image scenes are my own photos, which I've taken on different travel with my :camera: 
 * [Bootstrap](https://getbootstrap.com/) based theme [Spacelab](https://bootswatch.com/spacelab/), from [bootswatch](https://bootswatch.com)
 * The background wallpaper is from [KindPng](https://www.kindpng.com/imgv/ooJoxJ_baby-pacman-arcade-machine-hd-png-download/)
 
