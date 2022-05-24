@@ -12,6 +12,8 @@
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jlulloaa/pacmen?style=plastic">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jlulloaa/pacmen?color=yellow&style=plastic">
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jlulloaa/pacmen?style=plastic">
+  <a href="https://github.com/jlulloaa/pacmen/blob/main/LICENSE" target="_blank"> <img src="https://img.shields.io/github/license/jlulloaa/pacmen?style=plastic"></a>
+
 </p>
 
 <p align="center">
@@ -23,13 +25,12 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot]<video width="320" height="240" autoplay controls>
+<!-- ![screenshot]<video width="320" height="240" autoplay controls>
   <source src="howto/demo.mp4" type="video/mp4">
-</video>
-
+</video> -->
+[![IMAGE ALT TEXT](howto/demo.png)](howto/demo.mp4 "Video Title")
 
 # Project Title (with a fancy format)
-<a href="" target="_blank"> <img src="https://img.shields.io/github/license/jlulloaa/pacmen?style=plastic"></a>
 
 <a href="https://github.com/jlulloaa/pacmen"> <img src="https://img.shields.io/amo/rating/dustman?style=plastic"></a>
 
