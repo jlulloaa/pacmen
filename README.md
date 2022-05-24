@@ -54,7 +54,7 @@ The set of buttons to the left of the scene allows to control the game:
 * **Reset Game**: stops the action, cleans up the screen (i.e. removes all the pacmen) and changes the scene, by selecting another background image
 
 <img alt="Slider Screenshot" src="howto/slider.png" height=250px> 
-Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, by increasing all the speeds in the same relative amount (i.e. accelerates the whole scenery).
+Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, it increases all speeds in the same relative amount (i.e. accelerates the whole scenery).
 
 ##  [<img alt="Pacmen Right" src="assets/img/PacMan1.png" height=32px> Play with this demo <img alt="Pacmen Right" src="assets/img/PacMan3.png" height=32px>](https://jlulloaa.github.io/pacmen)
 
