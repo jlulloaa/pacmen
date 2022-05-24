@@ -25,10 +25,7 @@
   <a href="#license">License</a>
 </p>
 
-<!-- ![screenshot]<video width="320" height="240" autoplay controls>
-  <source src="howto/demo.mp4" type="video/mp4">
-</video> -->
-[![IMAGE ALT TEXT](howto/demo.png)](howto/demo.mp4 "Video Title")
+<img alt="GitHub repo size" src="howto/screenshot.png">
 
 # Project Title (with a fancy format)
 
