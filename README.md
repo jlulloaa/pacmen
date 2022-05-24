@@ -40,7 +40,7 @@ Set of pacman images used to create the illusion of motion.
 
 By defining an area within the page we setup the boundaries for the pacmen, so they can only "move" within that area. The photo of the nice beach defines these boundaries. There are 3 other scenes, that are randomly cycled everytime the game is reset (or the page is reloaded).
 
-The buttons to the left and the slider at the bottom, allow controlling the action (see [next section](#how-to-run)).
+The buttons to the left and the slider at the bottom, allow controlling the action (see [How to Run section](#how-to-run)).
 
 The page has been formatted mainly with [bootstrap](https://getbootstrap.com/) and the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). Some minor modifications are also performed through my own css style file. 
 
