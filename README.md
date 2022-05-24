@@ -33,11 +33,13 @@ PacMen Factory is an exploratory exercise I've done as part of the [full-stack w
 
 By using a set of pacman images in different states (see images below) and the use of the function [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout), we create the illusion of motion of the little creatures appearing on the screen, pretty much like the concept behind [movie creation](https://en.wikipedia.org/wiki/Film).
 
-<img alt="Pacmen 001" src="assets/img/PacMan1.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan2.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan3.png" height=32px><img alt="Pacmen 001" src="assets/img/PacMan4.png" height=32px>
-Set of pacman images used to create the illusion of motion. 
+<p style="text-align: center;">
+<img alt="Pacmen 001" src="assets/img/PacMan1.png" height=32px><img alt="Pacmen 002" src="assets/img/PacMan2.png" height=32px> Set of pacman images used to create the illusion of motion <img alt="Pacmen 003" src="assets/img/PacMan3.png" height=32px><img alt="Pacmen 004" src="assets/img/PacMan4.png" height=32px>
+</p>
 
-<img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px><img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px> By alternating between the open and closed mouth pacman images at regular intervals, the pacman appears to be moving.
-
+<p style="text-align: center;">
+<img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px> By alternating between the open and closed mouth pacman images at regular intervals, the pacman appears to be moving <img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px>
+</p>
 By defining an area within the page we setup the boundaries for the pacmen, so they can only "move" within that area. Whenever they hit any edge of the area, they squash a little and revert direction, moving back to the opposite edge. The edges are insivible in the page, but coincide with the edges of the nice :beach_umbrella: beach :camera: photo . There are 3 other scenes, that are randomly cycled everytime the game is reset (or the page is reloaded).
 
 The buttons to the left and the slider at the bottom, allow controlling the action (see [How to Run section](#how-to-run)).
@@ -56,7 +58,7 @@ The set of buttons to the left of the scene allows to control the game:
 <img alt="Slider Screenshot" src="howto/slider.png" height=250px> 
 Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, it increases all speeds in the same relative amount (i.e. accelerates the whole scenery).
 
-##  [<img alt="Pacmen Right" src="assets/img/PacMan1.png" height=32px> Play with this demo <img alt="Pacmen Right" src="assets/img/PacMan3.png" height=32px>](https://jlulloaa.github.io/pacmen)
+##  [<img alt="Pacmen Right" src="assets/img/Pacman1.giff" height=32px> Play with this demo <img alt="Pacmen Right" src="assets/img/Pacman3.gif" height=32px>](https://jlulloaa.github.io/pacmen)
 
 # Roadmap of future improvements
 This is a fun excercise that allows practising a lot of interesting concepts behind front-end development.  By no means this is a finalised project, there are many improvements that can think of, and because it is an open source project, I'll be happy to see any improvement or changes perfomed by others to make this a more interesting learning tool.
