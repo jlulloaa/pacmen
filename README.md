@@ -53,7 +53,7 @@ The set of buttons to the left of the scene allows to control the game:
 
 Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, by increasing all the speeds in the same relative amount (i.e. accelerates the whole scenery).
 
-Click the pacman to play with this demo: <a href="https://jlulloaa.github.io/pacmen">  <img alt="Pacmen Right" src="assets/img/PacMan1.png" height=16px></a>
+##  [<img alt="Pacmen Right" src="assets/img/PacMan1.png" height=16px> Play with this demo <img alt="Pacmen Right" src="assets/img/PacMan3.png" height=16px>](https://jlulloaa.github.io/pacmen)
 
 # Roadmap of future improvements
 This is a fun excercise that allows practising a lot of interesting concepts behind front-end development.  By no means this is a finalised project, there are many improvements that can think of, and because it is an open source project, I'll be happy to see any improvement or changes perfomed by others to make this a more interesting learning tool.
