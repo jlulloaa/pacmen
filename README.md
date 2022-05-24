@@ -26,7 +26,7 @@
   <a href="#license-information">License</a>
 </p>
 
-<img alt="GitHub repo size" src="howto/screenshot.png">
+<img alt="Pacmen Screenshot" src="howto/screenshot.png">
 
 # Description
 It's time for another exploratory exercise! Remember how you were able to manipulate the movements of PacMan across the browser window? In this exercise, you are going to create PacMen with the click of a button and each of them will move about the browser window at their own pace. Enjoy this challenge!
