@@ -29,7 +29,7 @@
 <img alt="Pacmen Screenshot" src="howto/screenshot.png">
 
 # Description
-PacMen Factory is an exploratory exercise I've done as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I'm pursuing. The idea of this exercise is to help understanding the concepts of asynchronous programming and callback functions in javascript, as well as interacting with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via javascript and exploring formatting capabilities by using [CSS styles](https://www.w3schools.com/html/html_css.asp) and [bootstrap](https://getbootstrap.com/) templates.
+PacMen Factory is an exploratory exercise I've done as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I'm pursuing. The idea of this exercise is to help understanding the concepts of asynchronous programming and callback functions in javascript, as well as interacting with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via javascript and exploring formatting capabilities with [CSS styles](https://www.w3schools.com/html/html_css.asp) and [bootstrap](https://getbootstrap.com/) templates.
 
 By using a set of pacman images in different states (see images below) and the use of the function [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout), we create the illusion of motion of the little creatures appearing on the screen, pretty much like the concept behind [movie creation](https://en.wikipedia.org/wiki/Film).
 
@@ -38,11 +38,11 @@ Set of pacman images used to create the illusion of motion.
 
 <img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px><img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px> By alternating between the open and closed mouth pacman images at regular intervals, the pacman appears to be moving.
 
-By defining an area within the page we setup the boundaries for the pacmen, so they can only "move" within that area. The photo of the nice beach defines these boundaries. There are 3 other scenes, that are randomly cycled everytime the game is reset (or the page is reloaded).
+By defining an area within the page we setup the boundaries for the pacmen, so they can only "move" within that area. Whenever they hit any edge of the area, they squash a little and revert direction, moving back to the opposite edge. The edges are insivible in the page, but coincide with the edges of the nice :beach_umbrella: beach :camera: photo . There are 3 other scenes, that are randomly cycled everytime the game is reset (or the page is reloaded).
 
 The buttons to the left and the slider at the bottom, allow controlling the action (see [How to Run section](#how-to-run)).
 
-The page has been formatted mainly with [bootstrap](https://getbootstrap.com/) and the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). Some minor modifications are also performed through my own css style file. 
+I have formatted the page mainly with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). I also performed some minor and more specific adjustements through my own css style file. 
 
 # How to Run
 The set of buttons to the left of the scene allows to control the game:
@@ -63,7 +63,7 @@ Some of the improvements I have in my ToDo list are:
 
 * Add boundaries within pacmen, so everytime they crash, they change direction. I'm not sure how to achieve that, but I'd guess it will require to consider other pacmen's position as another boundary, so would need to add that into some of the branching at the `checkCollisions` function
 
-* Add music. By playing with it, I can already imagine hearing some mumbling that increases with the number of pacmen (pretty much like a kids party :rofl: :rofl:)
+* Add music. By playing with it, I can already imagine hearing some mumbling that increases with the number of pacmen (pretty much like a kids party :rofl: :rofl: :rofl:)
 # Contributing
 Pull requests are welcome, although I'm not sure will be reviewing them periodically. I'll also be happy to chat about any improvement or extension that could be donde to this app.
 
