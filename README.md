@@ -6,17 +6,12 @@
 <h4 align="center">A fancy way to emulate motion in a webpage</h4>
 
 <p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
+<a href="https://validator.nu/?doc=https://jlulloaa.github.io/pacmen">
+<img alt="W3C Validation" src="https://img.shields.io/w3c-validation/html?logo=w3c&style=plastic&targetUrl=https%3A%2F%2Fjlulloaa.github.io%2Fpacmen">
+</a>
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jlulloaa/pacmen?style=plastic">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jlulloaa/pacmen?color=yellow&style=plastic">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jlulloaa/pacmen?style=plastic">
 </p>
 
 <p align="center">
@@ -28,7 +23,9 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot]<video width="320" height="240" autoplay controls>
+  <source src="howto/demo.mp4" type="video/mp4">
+</video>
 
 
 # Project Title (with a fancy format)
