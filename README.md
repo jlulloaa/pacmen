@@ -33,10 +33,10 @@ PacMen Factory is an exploratory exercise I've done as part of the [full-stack w
 
 By using a set of pacman images in different states (see images below) and the use of the function [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout), we create the illusion of motion of the little creatures appearing on the screen, pretty much like the concept behind [movie creation](https://en.wikipedia.org/wiki/Film).
 
-<img alt="Pacmen 001" src="assets/img/pacman1.png" height=32px>
-<img alt="Pacmen 001" src="assets/img/pacman2.png" height=32px>
-<img alt="Pacmen 001" src="assets/img/pacman3.png" height=32px>
-<img alt="Pacmen 001" src="assets/img/pacman4.png" height=32px>
+<img alt="Pacmen 001" src="assets/img/PacMan1.png" height=32px>
+<img alt="Pacmen 001" src="assets/img/PacMan2.png" height=32px>
+<img alt="Pacmen 001" src="assets/img/PacMan3.png" height=32px>
+<img alt="Pacmen 001" src="assets/img/PacMan4.png" height=32px>
 Set of pacman images used to create the illusion of motion. 
 
 <img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px><img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px> By alternating between the open and closed mouth pacman images at regular intervals, the pacman appears to be moving.
@@ -56,7 +56,7 @@ The set of buttons to the left of the scene allows to control the game:
 
 Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, by increasing all the speeds in the same relative amount (i.e. accelerates the whole scenery).
 
-Click the pacman to play with this demo: <a href="https://jlulloaa.github.io/pacmen">  <img alt="Pacmen Right" src="assets/img/pacman1.png" height=16px></a>
+Click the pacman to play with this demo: <a href="https://jlulloaa.github.io/pacmen">  <img alt="Pacmen Right" src="assets/img/PacMan1.png" height=16px></a>
 
 # Roadmap of future improvements
 This is a fun excercise that allows practising a lot of interesting concepts behind front-end development.  By no means this is a finalised project, there are many improvements that can think of, and because it is an open source project, I'll be happy to see any improvement or changes perfomed by others to make this a more interesting learning tool.
@@ -72,7 +72,7 @@ Pull requests are welcome, although I'm not sure will be reviewing them periodic
 
 # Credits
 This software uses the following third party tools:
-* The background image scenes are my own photos, which I've taken on different travel with my Nikon DSLR
+* The background image scenes are my own photos, which I've taken on different travel with my :camera: Nikon DSLR
 * [Bootstrap](https://getbootstrap.com/) based theme [Spacelab](https://bootswatch.com/spacelab/), from [bootswatch](https://bootswatch.com)
 * The background wallpaper is from [KindPng](https://www.kindpng.com/imgv/ooJoxJ_baby-pacman-arcade-machine-hd-png-download/)
 
