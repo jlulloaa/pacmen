@@ -38,7 +38,7 @@ By using a set of pacman images in different states (see images below) and the u
 </p>
 
 <p align=center>
-<img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px> By alternating between the open and closed mouth pacman images at regular intervals, the pacman appears to be moving <img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px>
+<img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px> By alternating pacman images between the open and closed mouth, the pacman appears to be moving <img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px>
 </p>
 By defining an area within the page we setup the boundaries for the pacmen, so they can only "move" within that area. Whenever they hit any edge of the area, they squash a little and revert direction, moving back to the opposite edge. The edges are insivible in the page, but coincide with the edges of the nice :beach_umbrella: beach :camera: photo . There are 3 other scenes, that are randomly cycled everytime the game is reset (or the page is reloaded).
 
