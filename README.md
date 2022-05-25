@@ -49,7 +49,7 @@ I have formatted the page mainly with [bootstrap](https://getbootstrap.com/) via
 # How to Run
 <img alt="Button Screenshot" src="howto/buttons.png" height=250px>
 
-The set of buttons to the left of the scene allows to control the game:
+The set of buttons at the upper-left corner of the scene allows to control the game:
 
 * **Add Pacman**: creates a new pacman and places it in a random position within the area. By [modifying the hue of the source images](https://developer.mozilla.org/en-US/docs/Web/CSS/filter), we give the impression of re-colouring (pseudo) randomly every new pacman.
 * **Start Game**: starts the motion of the pacmen. When created, every pacmen is assigned a random speed and placed at a random position, so when they start "moving", it appears they move with different velocities across the area. Motion is achieved by shifting the position of the images in a small amount and alternating between pacman images (i.e. mouth closed/open), between calls to the function [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout). 
@@ -58,7 +58,7 @@ The set of buttons to the left of the scene allows to control the game:
 
 <img alt="Slider Screenshot" src="howto/slider.png" height=250px>
 
-Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, it increases all speeds in the same relative amount (i.e. accelerates the whole scenery).
+Below the background image, at the bottom-left corner, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, it increases all speeds in the same relative amount (i.e. accelerates the whole scenery).
 
 <h2 align=center><img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px> <a href="https://jlulloaa.github.io/pacmen"> Play with this demo </a> <img alt="Pacmen Right" src="howto/Pacman02.gif" height=32px></h2>
 
