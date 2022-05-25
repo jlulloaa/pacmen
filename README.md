@@ -29,7 +29,7 @@
 <img alt="Pacmen Screenshot" src="howto/screenshot.png">
 
 # Description
-PacMen Factory is an exploratory exercise I am doing as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I'm pursuing. The idea of this exercise is to help understanding the concepts of asynchronous programming and callback functions in javascript, as well as interacting with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via javascript and exploring formatting capabilities with [CSS styles](https://www.w3schools.com/html/html_css.asp) and [bootstrap](https://getbootstrap.com/) templates.
+PacMen Factory is an exploratory exercise I am doing as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I am pursuing. The idea of this exercise is to help understanding the concepts of asynchronous programming and callback functions in javascript, as well as interacting with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via javascript and exploring formatting capabilities with [CSS styles](https://www.w3schools.com/html/html_css.asp) and [bootstrap](https://getbootstrap.com/) templates.
 
 By using a set of pacman images in different states (see images below) and the use of the function [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout), we create the illusion of motion of the little creatures appearing on the screen, pretty much like the concept behind [movie creation](https://en.wikipedia.org/wiki/Film).
 
