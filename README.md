@@ -72,7 +72,7 @@ Some of the improvements I have in my ToDo list are:
 
 * Add music. By playing with it, I can already imagine hearing some mumbling that increases with the number of pacmen (pretty much like a kids party :rofl: :rofl: :rofl:)
 # Contributing
-Pull requests are welcome, although I'm not sure will be reviewing them periodically. I'll also be happy to chat about any improvement or extension that could be donde to this app.
+Pull requests are welcome, and I'll be happy to chat about any improvement or extension that could be donde to this app.
 
 # Credits
 This software uses the following third party tools:
