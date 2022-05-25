@@ -44,7 +44,7 @@ By defining an area within the page we setup the boundaries for the pacmen, so t
 
 The buttons to the left and the slider at the bottom, allow controlling the action (see [How to Run section](#how-to-run)).
 
-I have formatted the page mainly with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). I also performed some minor and more specific adjustements through my own css style file. 
+I have formatted the page to become responsive with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). I also performed some minor and more specific adjustements through my own css style file. 
 
 # How to Run
 <img alt="Button Screenshot" src="howto/buttons.png" height=250px>
