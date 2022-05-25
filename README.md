@@ -29,7 +29,7 @@
 <img alt="Pacmen Screenshot" src="howto/screenshot.png">
 
 # Description
-PacMen Factory is an exploratory exercise I've done as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I'm pursuing. The idea of this exercise is to help understanding the concepts of asynchronous programming and callback functions in javascript, as well as interacting with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via javascript and exploring formatting capabilities with [CSS styles](https://www.w3schools.com/html/html_css.asp) and [bootstrap](https://getbootstrap.com/) templates.
+PacMen Factory is an exploratory exercise I am doing as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I'm pursuing. The idea of this exercise is to help understanding the concepts of asynchronous programming and callback functions in javascript, as well as interacting with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via javascript and exploring formatting capabilities with [CSS styles](https://www.w3schools.com/html/html_css.asp) and [bootstrap](https://getbootstrap.com/) templates.
 
 By using a set of pacman images in different states (see images below) and the use of the function [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout), we create the illusion of motion of the little creatures appearing on the screen, pretty much like the concept behind [movie creation](https://en.wikipedia.org/wiki/Film).
 
@@ -47,7 +47,8 @@ The buttons to the left and the slider at the bottom, allow controlling the acti
 I have formatted the page mainly with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). I also performed some minor and more specific adjustements through my own css style file. 
 
 # How to Run
-<img alt="Button Screenshot" src="howto/buttons.png" height=250px> 
+<img alt="Button Screenshot" src="howto/buttons.png" height=250px>
+
 The set of buttons to the left of the scene allows to control the game:
 
 * **Add Pacman**: creates a new pacman and places it in a random position within the area. By [modifying the hue of the source images](https://developer.mozilla.org/en-US/docs/Web/CSS/filter), we give the impression of re-colouring (pseudo) randomly every new pacman.
@@ -55,7 +56,8 @@ The set of buttons to the left of the scene allows to control the game:
 * **Stop Game**: pauses the action, leaving every pacmen static within the area, they can regain movement by just clicking **Start Game** again, or moving the speed slider (see below)
 * **Reset Game**: stops the action, cleans up the screen (i.e. removes all the pacmen) and changes the scene, by selecting another background image
 
-<img alt="Slider Screenshot" src="howto/slider.png" height=250px> 
+<img alt="Slider Screenshot" src="howto/slider.png" height=250px>
+
 Below the background image, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, it increases all speeds in the same relative amount (i.e. accelerates the whole scenery).
 
 <h2 align=center><img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px> <a href="https://jlulloaa.github.io/pacmen"> Play with this demo </a> <img alt="Pacmen Right" src="howto/Pacman02.gif" height=32px></h2>
