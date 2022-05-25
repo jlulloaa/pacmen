@@ -47,7 +47,7 @@ The buttons to the left and the slider at the bottom, allow controlling the acti
 I have formatted the page to become responsive with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). I also performed some minor and more specific adjustements through my own css style file. 
 
 # How to Run
-<img alt="Button Screenshot" src="howto/buttons.png" height=250px>
+<p align=center> <img alt="Button Screenshot" src="howto/buttons.png" height=250px> </p>
 
 The set of buttons at the upper-left corner of the scene allows to control the game:
 
@@ -56,7 +56,7 @@ The set of buttons at the upper-left corner of the scene allows to control the g
 * **Stop Game**: pauses the action, leaving every pacmen static within the area, they can regain movement by just clicking **Start Game** again, or moving the speed slider (see below)
 * **Reset Game**: stops the action, cleans up the screen (i.e. removes all the pacmen) and changes the scene, by selecting another background image
 
-<img alt="Slider Screenshot" src="howto/slider.png" height=250px>
+<p align=center> <img alt="Slider Screenshot" src="howto/slider.png" height=250px> </p>
 
 Below the background image, at the bottom-left corner, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, it increases all speeds in the same relative amount (i.e. accelerates the whole scenery).
 
