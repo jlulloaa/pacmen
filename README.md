@@ -28,7 +28,7 @@
 
 <img alt="Pacmen Screenshot" src="howto/screenshot.png">
 
-# Description
+# :ghost: Description
 PacMen Factory is an exploratory exercise I am doing as part of the [full-stack web developer certificate](https://executive-ed.xpro.mit.edu/professional-certificate-coding) I am pursuing. The idea of this exercise is to help understanding the concepts of asynchronous programming and callback functions in javascript, as well as interacting with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) via javascript and exploring formatting capabilities with [CSS styles](https://www.w3schools.com/html/html_css.asp) and [bootstrap](https://getbootstrap.com/) templates.
 
 By using a set of pacman images in different states (see images below) and the use of the function [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout), we create the illusion of motion of the little creatures appearing on the screen, pretty much like the concept behind [movie creation](https://en.wikipedia.org/wiki/Film).
@@ -38,7 +38,7 @@ By using a set of pacman images in different states (see images below) and the u
 </p>
 
 <p align=center>
-<img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px> By alternating between the open and closed mouth pacman images at regular intervals, the pacman appears to be moving <img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px>
+<img alt="Pacmen Right" src="howto/Pacman01.gif" height=32px> By alternating pacman images between the open and closed mouth, the pacman appears to be moving <img alt="Pacmen Left" src="howto/Pacman02.gif" height=32px>
 </p>
 By defining an area within the page we setup the boundaries for the pacmen, so they can only "move" within that area. Whenever they hit any edge of the area, they squash a little and revert direction, moving back to the opposite edge. The edges are insivible in the page, but coincide with the edges of the nice :beach_umbrella: beach :camera: photo . There are 3 other scenes, that are randomly cycled everytime the game is reset (or the page is reloaded).
 
@@ -47,7 +47,7 @@ The buttons to the left and the slider at the bottom, allow controlling the acti
 I have formatted the page to become responsive with [bootstrap](https://getbootstrap.com/) via the [bootswatch](https://bootswatch.com) theme [SpaceLab](https://bootswatch.com/spacelab/). I also performed some minor and more specific adjustements through my own css style file. 
 
 # How to Run
-<img alt="Button Screenshot" src="howto/buttons.png" height=250px>
+<p align=center> <img alt="Button Screenshot" src="howto/buttons.png" height=250px> </p>
 
 The set of buttons at the upper-left corner of the scene allows to control the game:
 
@@ -56,7 +56,7 @@ The set of buttons at the upper-left corner of the scene allows to control the g
 * **Stop Game**: pauses the action, leaving every pacmen static within the area, they can regain movement by just clicking **Start Game** again, or moving the speed slider (see below)
 * **Reset Game**: stops the action, cleans up the screen (i.e. removes all the pacmen) and changes the scene, by selecting another background image
 
-<img alt="Slider Screenshot" src="howto/slider.png" height=250px>
+<p align=center> <img alt="Slider Screenshot" src="howto/slider.png" height=250px> </p>
 
 Below the background image, at the bottom-left corner, there is a slider that changes the speed of all the pacmen. This slider operates as an accelerator for all the pacmen, it increases all speeds in the same relative amount (i.e. accelerates the whole scenery).
 
